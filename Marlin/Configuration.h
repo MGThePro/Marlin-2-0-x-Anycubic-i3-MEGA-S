@@ -626,7 +626,7 @@
 #if ENABLED(KNUTWURST_4MAXP2)
   #define TEMP_SENSOR_0 11
 #else
-  #define TEMP_SENSOR_0 1
+  #define TEMP_SENSOR_0 5
 #endif
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
@@ -700,7 +700,7 @@
 
 // Below this temperature the heater will be switched off
 // because it probably indicates a broken thermistor wire.
-#define HEATER_0_MINTEMP   1
+#define HEATER_0_MINTEMP   5
 #define HEATER_1_MINTEMP   1
 #define HEATER_2_MINTEMP   1
 #define HEATER_3_MINTEMP   1
@@ -1623,7 +1623,7 @@
  *      - normally-closed switches to GND and D32.
  *      - normally-open switches to 5V and D32.
  */
-// #define Z_MIN_PROBE_PIN 32 // Pin 32 is the RAMPS default
+#define Z_MIN_PROBE_PIN 21 // Pin 32 is the RAMPS default
 
 /**
  * Probe Type
